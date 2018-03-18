@@ -1,0 +1,11 @@
+<button (click)="toggle()">Toggle Fade</button>
+<div [@someCoolAnimation]="bindingVar">hello there</div>
+
+<!--<nav>
+    
+    <a routerLink="/heroes" routerLinkActive="active">Heroes</a>
+  </nav>-->
+
+<div [@routerAnimation]="getRouteAnimation(route)">
+  <router-outlet #route="outlet"></router-outlet>
+</div>
